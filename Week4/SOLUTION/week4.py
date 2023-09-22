@@ -126,14 +126,14 @@ def update_contact():
                 old_lname=input("Enter Old Last Name :")
                 new_lname=input("Enter New Last Name :")
                 query =f"""update contact
-                                    set fname='{new_lname}'
-                                    where fname='{old_lname}'  """
+                                    set lname='{new_lname}'
+                                    where lname='{old_lname}'  """
             elif col_name=='contact no':
                 old_contact=input("Enter Old Contact No :")
                 new_conatct=input("Enter New Contact No :")
                 query =f"""update contact
-                                    set fname='{new_contact}'
-                                    where fname='{old_contact}' """
+                                    set contact='{new_contact}'
+                                    where contact='{old_contact}' """
             curobj.execute(query)
             print()
             print("Record Update Successfully")
