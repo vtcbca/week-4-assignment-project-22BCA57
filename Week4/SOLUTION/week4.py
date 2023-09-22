@@ -101,7 +101,7 @@ def delete_contact():
             Name = input('Enter Contact First Name You Want To Delete : ')
             query = f"delete from contact\
                         where fname='{Name}'"
-            curobj.execute(query,main_list)
+            curobj.execute(query)
             print()
             print("Record Delete Successfully")
             print()
